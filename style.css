@@ -357,3 +357,69 @@ footer {
         padding: 8px;
     }
 }
+.checkout-form small {
+    color: red;
+    display: block;
+    margin-top: 4px;
+    font-size: 13px;
+}
+/* Success Popup */
+.success-popup {
+    display: none;
+    align-items: center;
+    gap: 14px;
+    background: #eaf8ef;
+    border: 1px solid #9bd5ad;
+    color: #237a3b;
+    padding: 15px 18px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    animation: popupSlide 0.4s ease;
+}
+
+.success-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: #2e9d50;
+    color: white;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.success-popup strong {
+    display: block;
+    font-size: 16px;
+}
+
+.success-popup p {
+    margin: 4px 0 0;
+    font-size: 13px;
+    color: #4c7c59;
+}
+
+@keyframes popupSlide {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Cart Count Badge */
+#cart-count {
+    background-color: red;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 50%;
+    margin-left: 4px;
+}
